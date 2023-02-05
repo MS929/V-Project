@@ -7,16 +7,16 @@ int main()
     printf("정수를 입력하시오 : ");
     scanf("%d", &n);
 
-    i = 1;
+    i = 0;
     sum = 0;
 
     while (i <= n)
     {
-        sum += 1;
-        i++;
+        sum += i;
+        i = i + 2;
     }
 
-    printf("1부터 %d까지의 합은 %d입니다.\n", n, sum);
+    printf("1부터 %d까지의 짝수합은 %d입니다.\n", n, sum);
 
     return 0;
 }
